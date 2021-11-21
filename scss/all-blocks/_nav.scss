@@ -1,0 +1,39 @@
+.nav{
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__item + &__item{
+        margin-left: 70px;
+
+    }
+    &__item{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: 6px solid transparent;
+    }
+
+    &__link{
+        display: inline-block;
+        font-family: 'Montserrat 800';
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #79BCCF;
+    }
+    &__item:not(:nth-child(5)):hover{
+        border-bottom: 6px solid #79BCCF;
+    }  
+
+    &__icon-link:hover{
+        opacity: 0.8;
+    }
+
+    &__icon-link:active{
+        opacity: 0.6;
+    }
+}
